@@ -1,0 +1,18 @@
+{
+  "port": 80,
+  "pageSize": 3,
+  "descriptionLen": 200,
+  "author": "Linpeng",
+  "icp": "黔ICP备15004120号",
+  "webHookSecret": "XuSenLin",
+  "categoryDisplayQuantity": 6,
+  "utterancesRepo": "xusenlin/blog_docs",
+  "timeLayout": "2006.01.02 15:04",
+  "siteName": "Lin Peng's Personal Blog",
+  "htmlKeywords": "forest blog,Golang,前端",
+  "htmlDescription": "Lin Peng's Personal blog",
+  "documentGitUrl": "https://github.com/NingmengLLL/blog_docs.git",
+  "themeColor": "#f44336",
+  "dashboardEntrance": "/admin",
+  "themeOption": ["#673ab7","#f44336","#9c27b0","#2196f3","#607d8b","#795548"]
+}
