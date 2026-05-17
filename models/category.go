@@ -64,6 +64,6 @@ func GroupByCategory(articles *Articles, articleQuantity int) Categories {
 
 func (c Categories) Len() int { return len(c) }
 
-func (c Categories) Less(i, j int) bool { return c[i].Quantity > c[j].Quantity }
+func (c Categories) Less(i, j int) bool { return c[i].Name < c[j].Name }
 
 func (c Categories) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
