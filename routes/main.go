@@ -8,15 +8,15 @@ import (
 
 func InitRoute() {
 
-	http.HandleFunc("/LinPeng-blog/blog/", controller.Index)
-	http.HandleFunc("/LinPeng-blog/blog", controller.Index)
-	http.HandleFunc("/LinPeng-blog/categories", controller.Category)
-	http.HandleFunc("/LinPeng-blog/article", controller.Article)
-	http.HandleFunc("/LinPeng-blog/extra-nav", controller.ExtraNav)
+	http.HandleFunc("/", controller.Index)
+	http.HandleFunc("/blog", controller.Index)
+	http.HandleFunc("/categories", controller.Category)
+	http.HandleFunc("/article", controller.Article)
+	http.HandleFunc("/extra-nav", controller.ExtraNav)
 
 	http.HandleFunc(config.Cfg.GitHookUrl, controller.GithubHook)
-	//http.HandleFunc(config.Cfg.DashboardEntrance, controller.Dashboard)
-	http.HandleFunc("/LinPeng-blog/admin/", controller.Dashboard)
+	http.HandleFunc(config.Cfg.DashboardEntrance, controller.Dashboard)
+	//http.HandleFunc("/LinPeng-blog/admin/", controller.Dashboard)
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir(config.Cfg.CurrentDir+"/public"))))
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir(config.Cfg.DocumentAssetsDir))))
