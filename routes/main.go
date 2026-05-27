@@ -8,7 +8,7 @@ import (
 
 func InitRoute() {
 
-	http.HandleFunc("/", controller.Category)
+	http.HandleFunc("/", controller.Index)
 	http.HandleFunc("/blog", controller.Index)
 	http.HandleFunc("/categories", controller.Category)
 	http.HandleFunc("/article", controller.Article)
